@@ -1,6 +1,9 @@
 name: build-skia
 run-name: ${{ github.actor }} is building skia
-#on: [push]
+on: 
+  push:
+    paths:
+      - 'version'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest

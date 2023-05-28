@@ -22,8 +22,8 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v3
-      - shell: bash
-        run: script/setup_diskspace.bat
+      #- shell: bash
+      #  run: script/setup_diskspace.bat
       - shell: bash
         run: script/fetch_depot.bat
       - shell: bash

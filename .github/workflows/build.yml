@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: $ROOT/script/setup_diskspace.sh
-      - run: $ROOT/script/fetch_depot.sh
-      - run: $ROOT/script/fetch_skia.sh
+      - run: script/setup_diskspace.sh
+      - run: script/fetch_depot.sh
+      - run: script/fetch_skia.sh

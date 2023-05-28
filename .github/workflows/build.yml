@@ -16,14 +16,17 @@ jobs:
       - run: script/setup_diskspace.sh
       - run: script/fetch_depot.sh
       - run: script/fetch_skia.sh
+      - run: script/archive_skia.sh
 
   build-skia-on-windows:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v3
       - shell: bash
-        run: script/setup_diskspace.sh
+        run: script/setup_diskspace.bat
       - shell: bash
-        run: script/fetch_depot.sh
+        run: script/fetch_depot.bat
       - shell: bash
-        run: script/fetch_skia.sh
+        run: script/fetch_skia.bat
+      - shell: bash
+        run: script/archive_skia.bat
